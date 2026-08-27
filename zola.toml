@@ -1,0 +1,46 @@
+# The URL the site will be built for
+title = "NEXNC Notes"
+base_url = "https://nexnc.com/notes"
+theme = "tabi"
+
+# Root-level options & taxonomies
+compile_sass = true
+build_search_index = true
+
+taxonomies = [
+    { name = "tags", feed = true },
+    { name = "categories", feed = true },
+]
+
+[markdown]
+
+[markdown.highlighting]
+theme = "nord"
+
+[extra]
+# Author & display
+author = "NEXNC"
+site_slogan = "Knowledge Dump"
+
+# UI / Features
+default_theme = "dark"           # "dark", "light", or "auto"
+show_theme_switcher = true
+quick_navigation_buttons = true  # back-to-top / fast scroll
+
+# Code blocks
+copy_button = true               # 1-click copy code snippet button
+
+# Main navigation bar links
+[[extra.menu]]
+name = "notes"
+url = "$BASE_URL/notes"
+trailing_slash = true
+
+[[extra.menu]]
+name = "cheatsheets"
+url = "$BASE_URL/cheatsheets"
+trailing_slash = true
+
+[[extra.menu]]
+name = "about"
+url = "https://nexnc.com"
